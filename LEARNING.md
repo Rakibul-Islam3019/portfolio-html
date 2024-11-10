@@ -16,4 +16,29 @@
  - Version control : Git and GitHub
 
  6. Basic structure of HTML
+ - head
+ - body
+
+ 7. Basic tag, styling, debugging
+ - tag? types of tag
+ - attribute
+ - element, content
+ - debugginbg
+ - comment
+
+ 8. Heading, paragraph, line breaks, horizontal rule
+
+ 9. Semantic HTML vs Non Semantic HTML
+ - Semantic tag : header, footer, main, form, table
+ - Non semantic tag : div, span
+
+ 10. Text formatting tags
+ 11. List
+ 12. Link
+ 13. Table
+ 14. Form
+ 15. Deploy
+
+
+
  
