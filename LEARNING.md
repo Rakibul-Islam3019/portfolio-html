@@ -34,7 +34,14 @@
 
  10. Text formatting tags
  11. List
+ - order list
+ - unborder list
+ - definition list
+ - nested list
+
  12. Link
+ - absolut link vs relative link
+ - a tag, attibutes : href, target, title
  13. Table
  14. Form
  15. Deploy
