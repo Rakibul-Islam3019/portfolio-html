@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, html, Rakibul Islam">
+    <meta name="author" content="Rakibul Islam">
+    <meta name="description" content="Rakibul Islam is a Software Engineer, Recently, he has completed his Bachelor degree from Daffodil International University">
     <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <style>
+        body{
+            background-color:rgb(192, 224, 252);
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
 </head>
 <body>
     <!--Secttion : navbar-->
-    <nav>
-        <ul>
-            <li>
-                <a href="#about" title="visit home page" target="_self">Home</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
-    <!--Introduction Section-->
-    <header id="intro">
-        <h1>Rakibul Islam</h1>
-        <p><em>Software Engineer || Cybersecurity Learner</em></p>
-        <a href="https://youtube.com"><img src="./images/Rakib.jpg" alt="Rakibul Islam" height="150"></a>
-        <hr>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about" title="visit home page" target="_self">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
+    
+    <main>
+        <!--Introduction Section-->
+    <section>
+        <header id="intro">
+            <h1>Rakibul Islam</h1>
+            <p><em>Software Engineer || Cybersecurity Learner</em></p>
+            <a href="https://youtube.com"><img src="./images/Rakib.jpg" alt="Rakibul Islam" height="150"></a>
+            <hr>
+        </header>
+    </section>
+    
 
     <!--About me section-->
     <section id="about">
@@ -53,11 +79,10 @@
             <tbody>
                 <tr> 
                     <td>HTML</td>
-                    <td>Expert</td>
+                    <td rowspan="2">Expert</td>
                 </tr>
                 <tr> 
                     <td>CSS</td>
-                    <td>Expert</td>
                 </tr>
                 <tr> 
                     <td>JavaScript</td>
@@ -65,6 +90,31 @@
                 </tr>
             </tbody>
         </table>
+        
+        <div>
+            <h3>Skill Progress</h3>
+            <div>
+                <label for="htmlprogress">HTML: </label>
+                <progress id="htmlprogress" value="90" max="100">90%</progress>
+            </div>
+    
+            <div>
+                <label for="cssprogress">CSS: </label>
+                <progress id="cssprogress" value="80" max="100">90%</progress>
+            </div>
+    
+            <div>
+                <label for="jsprogress">JavaScript: </label>
+                <progress id="jsprogress" value="60" max="100">90%</progress>
+            </div>
+        </div>
+
+        <div>
+            <h3>Experience Level</h3>
+            <label for="experiencelevel">Experience: </label>
+            <meter id="experiencelevel" value="5" min="0" max="10">5 years</meter>
+        </div>
+    </section>
 
     <!--Project section-->
     <section id="projects">
@@ -76,10 +126,16 @@
         </ol>
     </section>
 
+    <video width="320" controls
+    <source src="./assets/video/practice1.mp4" type="video/mp4">
+    Your browser do not support this type of video.
+    </video>
+
     <!--Section: Contacts-->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form  action="https://formspree.io/f/xpwzrbpa"
+        method="POST"
             <div>
                 <label for="name">Name :</label>
                 <input type="text" id="name" name="name" required/>
@@ -88,6 +144,31 @@
             <div>
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="age">Age : </label>
+                <input type="number" id="age" name="age" min="18" required />
+            </div>
+
+            <div>
+                <label for="website">Website : </label>
+                <input type="url" id="website" name="website" pattern="https?://.+" />
+            </div>
+
+            <div>
+                <label for="image">UploadImage : </label>
+                <input type="file" id="image" name="image" accept="image/*" required />
+            </div>
+
+            <div>
+                <label for="subject">Subject : </label>
+                <select name="subject" id="subject">
+                    <option value="inquiry">Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="job">Job opportunity</option>
+                </select>
+
             </div>
 
             <div>
@@ -101,13 +182,40 @@
             </div>
         </form>
     </section>
+    </main>
 
-    <!--footer section-->
-    <section>
+    <!--footer-->
+    <footer>
         <p>Copyright reserved by &copy; Rakibul2024</p>
         <a href="tel:01871102802">Call me</a>
         <a href="mailto:rakibul35.3019@gmail.com">Email</a>
-    </section>
+         <div>
+            <h3>Follow ME</h3>
+            <ul>
+            <li>
+                <a href="https://web.facebook.com/rakibulislam3019" target="_blank">
+                <i class="fa-brands fa-facebook"></i> Facebook Profile </a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/rakibulislam3019" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/rakibulislam3019" target="_blank">
+                <i class="fa-brands fa-github"></i> Github</a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/rakibulislam3019" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> Linkdin</a>
+            </li>
+            </ul>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14674.593272433649!2d91.30125633777482!3d23.14652659592712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375364f3bc7b1a67%3A0x3249cda15476c4e!2sCheora!5e0!3m2!1sen!2sbd!4v1731593209269!5m2!1sen!2sbd" title="Home Address" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    
 
 
 </body>

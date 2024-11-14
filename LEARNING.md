@@ -47,4 +47,14 @@
  15. Deploy
 
 16. Images
+
+## Intermediate HTML
+
+- Meta tag & SEO
+- Adding font-awesome icons and google font
+- advanced table
+- form data sent to your email
+- Multimedia
+- HTML5 elements
+
  
