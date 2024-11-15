@@ -57,4 +57,12 @@
 - Multimedia
 - HTML5 elements
 
- 
+
+## Advanced HTML
+
+- advanced form - <input type="color/range">, datalist, fieldset, legend
+- web accessibility
+- HTML5 API
+- HTML template and web components
+- Sources for symbols, icons, emojis and colors
+- Learning resources
